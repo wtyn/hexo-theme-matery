@@ -242,7 +242,19 @@ let reprintPolicy = page.reprintPolicy || theme.reprint.default || 'cc_by'
                 <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
             </span>
             <%= __('payreprint') %>
-        <% } %>
+        <% } else if (reprintPolicy === 'simple') { %>
+            <i class="fas fa-exclamation-circle"></i>
+            转载请注明：
+            <span class="reprint-info">
+                <a href="<%- config.url %>" rel="external nofollow noreferrer"><%- page.author || config.author %></a>
+            </span>
+                 >
+            <span class="reprint-info">
+               <a  href="<%- url_for(page.path) %>">
+                    <%= page.title %>
+                </a>
+            </span>
+            <% } %>
     </div>
 
     <script async defer>
