@@ -67,7 +67,7 @@ dream:
   enable: true
   showTitle: true
   title: 我的梦想
-  text: 名人有名言，我是个搬Code。曾经我也是三国迷，不曾记得多少圣人名言，只依稀记得：刘备看到了自己腿上的赘肉，而悲伤不已。
+  text: 刘备看到自己腿上的赘肉，而悲伤不已。少留遗憾吧，骚年~
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -121,10 +121,10 @@ logo: /medias/logo.png
 # including the display name of the button, the font awesome icon, and the hyperlink to the button.
 # 首页 banner 中的第二个按钮的配置，包括按钮的显示名称、font awesome图标和按钮的超链接.
 indexbtn:
-  enable: true
+  enable: false
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/blinkfox/hexo-theme-matery
+  url: 
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
@@ -146,7 +146,7 @@ socialLink:
 toc:
   enable: true
   heading: h1, h2, h3, h4
-  collapseDepth: 0 # 目录默认展开层级
+  collapseDepth: 2 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # 代码块相关
@@ -209,22 +209,22 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
     hexo-theme-matery:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
+      # url: http://github.com/blinkfox/hexo-theme-matery
       desc: This is a Hexo blog theme with 'Material Design' and responsive design.
     Fenix:
         icon: fas fa-database
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
+        # url: https://github.com/blinkfox/fenix
         desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
     typora-vue-theme:
         icon: fas fa-file-alt
         iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
+        # url: https://github.com/blinkfox/typora-vue-theme
         desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
@@ -233,30 +233,30 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
+    iOS:
       background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
-    JavaScript:
+      percent: 80%
+    Android:
       background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
       percent: 80%
-    HTML5:
+    Python:
       background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
       percent: 80%
-    CSS:
+    智能语音:
       background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
-      percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
       percent: 90%
+    # SQL:
+    #   background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
+    #   percent: 90%
     程序设计:
       background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+      percent: 85%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的相册"图片，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myGallery:
-  enable: true
+  enable: false
   data:
     - /medias/featureimages/0.jpg
     - /medias/featureimages/1.jpg
@@ -317,8 +317,8 @@ valine:
 # Whether to display fork me on github icon and link, default true, You can change it to your repo address
 # 配置是否在 header 中显示 fork me on github 的图标，默认为true，你可以修改为你的仓库地址.
 githubLink:
-  enable: true
-  url: https://github.com/blinkfox/hexo-theme-matery
+  enable: false
+  url:
   title: Fork Me
 
 # The password verification feature of read post. To use this feature,
@@ -482,12 +482,12 @@ ribbon_dynamic:
 sharejs:
   enable: true
   # sites: twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin
-  sites: wechat,qq,qzone,weibo,douban,linkedin
+  sites: wechat,qq,qzone,weibo,douban
 
-# addthis文章分享模块.
+# addthis文章分享按钮模块.
 addthis:
   enable: false
-  pubid:  # 前往https://www.addthis.com/获取
+  pubid: ra-5e4e002c76f802b3  # 前往https://www.addthis.com/获取
 
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
@@ -498,8 +498,8 @@ subtitle:
   startDelay: 300 # 开始延迟
   typeSpeed: 100 # 打字速度
   backSpeed: 50 # 删除速度
-  sub1: 从来没有真正的绝境, 只有心灵的迷途
-  sub2: Never really desperate, only the lost of the soul
+  sub1: 享受生活，顺其自然
+  sub2: Maybe it was better to just really enjoy life.
 
 # 手机二级菜单.
 navMenu:
