@@ -66,8 +66,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 分享是一种快乐
-  text: 分享是一种快乐，开源是一种精神。如果你觉有用，那就分享给他人吧
+  title: 分享
+  text: 分享是一种快乐，开源是一种精神。  别人照亮了你前进的道路，你也应当送给别人一盏明灯。  如果你觉有用，那就分享给他人吧
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -130,7 +130,7 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  
+  github: 
   email: 714811530@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
@@ -155,6 +155,7 @@ code:
   copy: true # 代码块是否可复制
   shrink: true # 代码块是否可以收缩
   break: false # 代码是否折行
+
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
