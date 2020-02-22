@@ -182,6 +182,14 @@
     .frind-card10 {
         background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
     }
+
+    .friendcard {
+        transition: all 0.3s;
+    }
+
+    .friendcard:hover {
+        transform: scale(1.1);
+    }
     
     article .card {
         overflow: visible !important;
@@ -202,22 +210,25 @@
                         <% for (var i = 0, len = friends.length; i < len; i++) { %>
                         <% var friend = friends[i]; %>
                         <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                            <div class="card frind-card<%- ((i % 10) +1) %>">
-                                <div class="frind-ship">
-                                    <div class="title">
-                                        <img src="<%- friend.avatar %>" alt="img">
-                                        <div>
-                                            <h1 class="friend-name"><%- friend.name %></h1>
-                                            <p style="position: relative;top: -35px;"><%- friend.introduction %></p>
+                            <div class="card friendcard frind-card<%- ((i % 10) +1) %>">
+                                <a href="<%- friend.url %>" target="_blank"
+                                   class="friendhov" >
+                                    <div class="frind-ship">
+                                        <div class="title" >
+                                            <img src="<%- friend.avatar %>" alt="img">
+                                            <div>
+                                                <h7 class="friend-name"><%- friend.name %></h7>
+                                                <p style="position: relative;"><%- friend.introduction %></p>
+                                            </div>
                                         </div>
+<!--                                    <div class="friend-button">-->
+<!--                                        <a href="<%- friend.url %>" target="_blank"-->
+<!--                                            class="button button-glow button-rounded button-caution">-->
+<!--                                            <%- friend.title %>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
                                     </div>
-                                    <div class="friend-button">
-                                        <a href="<%- friend.url %>" target="_blank"
-                                            class="button button-glow button-rounded button-caution">
-                                            <%- friend.title %>
-                                        </a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <% } %>

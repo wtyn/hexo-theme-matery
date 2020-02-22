@@ -80,6 +80,13 @@ h6 {
     line-height: 1.1rem;
 }
 
+h7 {
+    margin: 10px 0 4px -4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.1rem;
+}
+
 p {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -883,11 +890,11 @@ article a {
     text-transform: none !important;
 }
 
-article a:hover {
-    font-weight: bold;
-    color: #42b983;
-    text-decoration: underline;
-}
+/*article a:hover {*/
+/*    font-weight: bold;*/
+/*    color: #42b983;*/
+/*    text-decoration: underline;*/
+/*}*/
 
 .articles .row {
     margin-left: 0;

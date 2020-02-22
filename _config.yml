@@ -66,8 +66,8 @@ cover:
 dream:
   enable: true
   showTitle: true
-  title: 我的梦想
-  text: 刘备看到自己腿上的赘肉，而悲伤不已。少留遗憾吧，骚年~
+  title: 分享是一种快乐
+  text: 分享是一种快乐，开源是一种精神。如果你觉有用，那就分享给他人吧
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -94,7 +94,7 @@ video:
   enable: false
   showTitle: true
   title: 精彩视频
-  url: # 必填
+  url: 
   pic:
   thumbnails:
   height: # 如：400
@@ -146,7 +146,7 @@ socialLink:
 toc:
   enable: true
   heading: h1, h2, h3, h4
-  collapseDepth: 2 # 目录默认展开层级
+  collapseDepth: 1 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # 代码块相关
