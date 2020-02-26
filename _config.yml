@@ -419,7 +419,7 @@ featureImages:
 - /medias/featureimages/20.jpg
 - /medias/featureimages/21.jpg
 - /medias/featureimages/22.jpg
-- /medias/featureimages/23.jpg
+
 
 # default configs that the default policy for every articles/posts
 # default 配置文章的默认转载规则
@@ -493,7 +493,7 @@ addthis:
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
 subtitle:
-  enable: true
+  enable: false
   loop: true # 是否循环
   showCursor: true # 是否显示光标
   startDelay: 300 # 开始延迟
