@@ -146,7 +146,7 @@ socialLink:
 toc:
   enable: true
   heading: h1, h2, h3, h4
-  collapseDepth: 1 # 目录默认展开层级
+  collapseDepth: 2 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
 # 代码块相关
@@ -303,6 +303,7 @@ livere:
 # The configuration of the Valine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
+# 控制台：https://leancloud.cn/dashboard/applist.html#/apps
 valine:
   enable: true
   appId: 'siea0Y7rAso47ywFQBms2HXq-gzGzoHsz'
