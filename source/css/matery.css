@@ -1849,6 +1849,12 @@ footer .copy-right {
     color: #dbdbdb;
 }
 
+
+#webchat {
+    left: 100px;
+}
+
+
 /*搜索层样式*/
 #searchIcon {
     font-size: 1.2rem;
@@ -1898,8 +1904,8 @@ footer .copy-right {
 .top-scroll {
     display: none;
     position: fixed;
-    right: 15px;
-    bottom: 15px;
+    right: 27px;
+    bottom: 85px;
     padding-top: 15px;
     margin-bottom: 0;
     z-index: 998;

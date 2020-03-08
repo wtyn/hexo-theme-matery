@@ -28,6 +28,44 @@
     <script async src="<%- theme.jsDelivr.url %><%- theme.libs.js.busuanzi %>"></script>
     <% } %>
 
+<!--    <% if (theme.crisp.enable) { %>-->
+<!--        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="bf70e16b-6369-4dc8-bb12-adc1510f5b36";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+<!--    <% } %>-->
+
+    <% if (theme.webchat.enable) { %>
+        <div id="webchat"/>
+        <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+        <script>
+            WebChat.default.init({
+                selector: "#webchat",
+                initPayload: "/get_started",
+                interval: 1000, // 1000 ms between each message
+                // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+                socketUrl: "http://tnnoaman.iok.la",
+                socketPath: "/socket.io/",
+                title: "小鼠鼠",
+                subtitle: "我是一个聪明的小老鼠",
+                inputTextFieldHint: "请输入...",
+                connectingText: "正等待连接...",
+                hideWhenNotConnected: false,
+                fullScreenMode: false,
+                profileAvatar: "/medias/小老鼠.jpeg",
+                openLauncherImage: '/medias/chat-icon.svg',
+                closeLauncherImage: '/medias/我的.png',
+                params: {
+                    images: {
+                        dims: {
+                            width: 300,
+                            height: 200,
+                            left: 0
+                        }
+                    },
+                    storage: "local"
+                }
+            })
+        </script>
+    <% } %>
+
     <% if (theme.tidio.enable) { %>
         <script src="//code.tidio.co/<%- theme.tidio.public_key %>.js"></script>
         <script> 
