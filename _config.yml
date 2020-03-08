@@ -454,6 +454,9 @@ crisp:
 # 自定义的聊天webchat
 webchat:
   enable: true
+  title: "小鼠鼠"
+  subtitle: '我是一只聪明的小老鼠'
+  socketUrl: "http://tnnoaman.iok.la"
 
 
 # DaoVoice online contact

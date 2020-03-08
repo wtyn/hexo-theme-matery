@@ -34,17 +34,17 @@
 
     <% if (theme.webchat.enable) { %>
         <div id="webchat"/>
-        <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>
+        <script src="<%- theme.jsDelivr.url %>/js/webchat-20200307.js"></script>
         <script>
             WebChat.default.init({
                 selector: "#webchat",
                 initPayload: "/get_started",
                 interval: 1000, // 1000 ms between each message
                 // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-                socketUrl: "http://tnnoaman.iok.la",
+                socketUrl: "<%- theme.webchat.socketUrl %>",
                 socketPath: "/socket.io/",
-                title: "小鼠鼠",
-                subtitle: "我是一个聪明的小老鼠",
+                title: "<%- theme.webchat.title %>",
+                subtitle: "<%- theme.webchat.subtitle %>",
                 inputTextFieldHint: "请输入...",
                 connectingText: "正等待连接...",
                 hideWhenNotConnected: false,
@@ -69,7 +69,7 @@
                 setInterval(change_top, 50);
                 function change_top() {
                     if($(window).width()<786){
-                        document.getElementById("backTop").style.right="46px"
+                        document.getElementById("backTop").style.right="44px"
                         document.getElementById("backTop").style.bottom="110px"
                     }else {
                         document.getElementById("backTop").style.right="27px"
