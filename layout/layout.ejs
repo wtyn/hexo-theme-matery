@@ -64,6 +64,22 @@
                 }
             })
         </script>
+        <script>
+            $(document).ready(function () {
+                setInterval(change_top, 50);
+                function change_top() {
+                    if($(window).width()<786){
+                        document.getElementById("backTop").style.right="46px"
+                        document.getElementById("backTop").style.bottom="110px"
+                    }else {
+                        document.getElementById("backTop").style.right="27px"
+                        document.getElementById("backTop").style.bottom="85px"
+                    }
+                }
+            });
+        </script>
+
+
     <% } %>
 
     <% if (theme.tidio.enable) { %>
