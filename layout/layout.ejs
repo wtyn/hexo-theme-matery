@@ -34,35 +34,40 @@
 
     <% if (theme.webchat.enable) { %>
         <div id="webchat"/>
-        <script src="<%- theme.jsDelivr.url %>/js/webchat-20200307.js"></script>
+        <script src="<%- theme.jsDelivr.url %>/js/webchat.js"></script>
 <!--        <script src="https://storage.googleapis.com/mrbot-cdn/webchat-latest.js"></script>-->
         <script>
             WebChat.default.init({
                 selector: "#webchat",
                 initPayload: "/get_started",
                 interval: 1000, // 1000 ms between each message
-                // customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-                socketUrl: "<%- theme.webchat.socketUrl %>",
+                customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
                 socketPath: "/socket.io/",
                 title: "<%- theme.webchat.title %>",
                 subtitle: "<%- theme.webchat.subtitle %>",
                 inputTextFieldHint: "请输入...",
-                connectingText: "正等待连接...",
+                connectingText: "很抱歉，博主电脑没开呢...",
                 hideWhenNotConnected: false,
                 fullScreenMode: false,
                 profileAvatar: "/medias/小老鼠.jpeg",
                 openLauncherImage: '/medias/chat-icon.svg',
                 closeLauncherImage: '/medias/我的.png',
+                https: true,
                 params: {
                     images: {
                         dims: {
                             width: 300,
-                            height: 200,
-                            left: 0
+                            height: 100,
                         }
                     },
-                    storage: "local"
-                }
+                    storage: "<%- theme.webchat.storage %>"
+                },
+                customMessageDelay: (message) => {
+                    return 900+message.length;
+                },
+                onSocketEvent: {
+                    'bot_uttered': () => console.log("Bot has uttered"),
+                },
             })
         </script>
         <script>
@@ -82,6 +87,7 @@
 
 
     <% } %>
+
 
     <% if (theme.tidio.enable) { %>
         <script src="//code.tidio.co/<%- theme.tidio.public_key %>.js"></script>
